@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruz, Milagros Andrea Giuliana</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\giuli\Desktop\Prototipo entrega final\Estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script src="https://kit.fontawesome.com/603cdb33db.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+                font-family: "Sofia", sans-serif;
+               
+}
+</style>
+<style>
+    #Datos{
+        display: none;
+    }
+  </style>
+<style> 
+ #Formacion{
+    display: none;
+}
+</style>
+<style>
+     #Atributos{
+        display: none;
+    }
+</style>
+</head>
+</head>
+<body>
+    
+    <div>
+        <img src="C:\Users\giuli\Downloads\WhatsApp Image 2023-01-11 at 00.53.15.jpeg" alt="Foto personal" width="140" height="150">
+        <h1>Cruz, Milagros Andrea Giuliana</h1>
+        <p>Luzuriaga, Maipú</p>
+        <p>(0261) 3620388</p>
+      
+        <button type="button" onclick="mostrarDatos();"> Ver datos personales</button>
+        <div id="Datos">
+                    <legend> <i class="fa-solid fa-user"></i> Datos Generales </legend> 
+                  
+                <ul>
+                <li><span>fecha de nacimiento:</span> 26/04/2002</li>
+                <li><span>DNI:</span> 44124193</li>
+                <li><span>Email:</span> milucruz02@gmail.com</li>
+            </ul>
+            <button type="button" onclick="ocultarDatos();">Ocultar datos personales</button>
+              </div>
+                      <button type="button" onclick="mostrarFormacion();"> Ver formacion academica</button>
+              <div id="Formacion">
+            <legend><i class="fa-solid fa-graduation-cap"></i> Formación Academica</legend>
+            <ul>
+                <li>Bachiller en economia y administracion (2015-2019) ISVF</li>
+                <li>Ingenieria en sistemas (2021-) UTN</li>
+                <li>Master en excel (2022) Udemy</li>
+                <li>Programacion Java (2022) Udemy</li>
+
+            </ul>
+            <button type="button" onclick="ocultarFormacion();">Ocultar formacion academica</button>
+        </div>
+        
+        <button type="button" onclick="mostrarAtributos();"> Ver atributos</button>
+           <div id="Atributos">
+            <legend><i class="fa-solid fa-star"></i> Atributos</legend>
+            <ul>
+                <li>C</li>
+                <li>CSS</li>
+                <li>Java</li>
+                <li>Pack office</li>
+            </ul>
+            <button type="button" onclick="ocultarAtributos();">Ocultar atributos</button>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+        function mostrarDatos(){
+            document.getElementById('Datos').style.display = 'block';
+        }
+        function ocultarDatos(){
+            document.getElementById('Datos').style.display = 'none';
+        }
+      
+    </script>
+<script>
+function mostrarFormacion(){
+            document.getElementById('Formacion').style.display = 'block';
+        }
+        function ocultarFormacion(){
+            document.getElementById('Formacion').style.display = 'none';
+        }
+</script>
+<script>
+     function mostrarAtributos(){
+            document.getElementById('Atributos').style.display = 'block';
+        }
+        function ocultarAtributos(){
+            document.getElementById('Atributos').style.display = 'none';
+        }
+</script>
+</body>
+</html>
